@@ -12,7 +12,7 @@ const  postsLoadingbySearch =async(searchTxt)=>{
     const data =await res.json();
     const allPosts = data.posts;
     displayPosts(allPosts);
-    // markAsRead(allPosts);
+    
 }
 
 
@@ -21,14 +21,14 @@ const latestPosts = async()=>{
     const response = await fetch('https://openapi.programming-hero.com/api/retro-forum/latest-posts');
     const latestData =await response.json();
 
-    // console.log(latestData);
+    
     displayLatestPosts(latestData)
 }
 
 const displayLatestPosts=(latestPosts)=>{
     const postsContainer = document.getElementById('postsContainer');
     latestPosts.forEach(latestPost=>{
-        // console.log(latestPost);
+        
        const commentContainer = document.createElement('div');
        commentContainer.classList=`flex flex-col md:flex-row justify-center items-center gap-4 mx-4 my-4`;
        commentContainer.innerHTML=`<div class="p-3">
