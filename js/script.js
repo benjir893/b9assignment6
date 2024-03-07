@@ -53,9 +53,9 @@ const displayLatestPosts=(latestPosts)=>{
 const displayPosts=(allPosts)=>{
 
     const postContainerSection = document.getElementById('postContainerSection')
-        // postContainerSection.textContent='';
+       
      allPosts.forEach(element => {
-        // console.log(element);
+        
         const postInfoContainer  = document.createElement('div');
             postInfoContainer.textContent='';
         postInfoContainer.classList=`flex flex-col justify-center items-center w-full my-4 md:flex-row gap-5`;
