@@ -118,8 +118,7 @@ const handleSearch=()=>{
     const searchTxt = searchField.value;
 
     postsLoadingbySearch(searchTxt);
-    // emptyPosts(searchTxt);
-    // console.log(searchTxt);
+    
 }
 
 const loadingSpinner=(isLoading)=>{
